@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu primeiro site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-Vindos ao Mundo Web</h1>
+        <p id="texto-mensagem"></p>
+         <p>Essa é minha página</p>
+    </header>
+<main class="container-principal">
+
+    <section>
+        <h2 id="titulo-principal">Sobre Mim</h2>
+        <p>Estou aprendendo <strong>HTML</strong> e <Strong>CSS</Strong>!</p>
+    </section>
+      
+
+    <section>
+        <h2>Minha Tabela de Estudos</h2>
+        <table>
+            <tr>
+                <th>Dia</th>
+                <th>Matéria</th>
+            </tr>
+
+            <tr>
+                <th>Segunda</th>
+                <td>Matematica</td>
+                
+            </tr>
+
+            <tr>
+                <th>Terça</th>
+                <td> Estrutura HTML</td>
+            </tr>
+
+                
+             <tr>
+                <th>Quarta</th>
+                <td>Quimica / Inglês</td>
+            </tr>
+
+             <tr>
+                <th>Quinta</th>
+                <td>Biologia / Mentoria Tech</td>
+            </tr>
+
+             <tr>
+                <th>Sexta</th>
+                <td>POO</td>
+             </tr>
+        </table>
+    </section>
+    <section>
+        <a href="#contato">Ir para contato</a>
+        <h2>Galeria de Mídia</h2>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOmIIJDoC-fZ5-z-fG34el5cIKOjLlAJCYtw&s">
+    </section>
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text"  id="nome" placeholder="Digite o nome">
+
+            <br><br>
+
+            <label for="input-mensagem">Mensagem:</label>
+            <textarea id="input-mensagem"></textarea>
+
+            <br><br>
+
+            <button type="button" onclick="darBoasVindas()">Enviar </button>
+
+        </form>
+        <div class="caixa-teste" onmouseover="mudarCor(this)" onmouseout="voltarCor(this)">
+            Passe o mouse aqui para testar a cor!
+        </div>
+
+    </section>
+</main>
+<footer>
+    <div class="rodape-conteudo">
+        <p>&copy;2026 Mundo web. Todos os direitos reservados.</p>
+        <p>Desenvolvidos por Carla Tauany e Ana Luisa | <a href="#contrato">Termos e Contratos</a></p>
+    </div>
+</footer>
+
+       <script src="script.js"></script>
+</body>
+
+</html>
